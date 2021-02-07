@@ -149,17 +149,24 @@ input {
 }
 
 .themeDelete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 25%;
     font-size: 1.5vw;
     transition: 0.2s;
 }
 
-.themeDelete:hover {
-    font-size: 2vw;
+.themeDelete:hover .trashLogo {
+    width: 45%;
+    height: 45%;
     transition: 0.2s;
+    opacity: 100%;
 }
 
 .themeName {
+    display: flex;
+    justify-content: center;
     width: 70%;
     font-size: 1.5vw;
     transition: 0.2s;
@@ -172,6 +179,8 @@ input {
 }
 
 .trashLogo {
-    width: 50%;
-    height: 50%;
+    width: 30%;
+    height: 30%;
+    transition: 0.2s;
+    opacity: 50%;
 }
