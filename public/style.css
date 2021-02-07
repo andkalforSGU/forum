@@ -2,6 +2,15 @@
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+input {
+    color: black;
+    border: black solid 1px;
+}
+
+.none {
+    display: none;
+}
+
 ::-webkit-scrollbar-button {
     background-image:url('');
     background-repeat:no-repeat;
@@ -79,12 +88,6 @@ main {
 
 footer {
     background-color: rgb(88, 224, 211);
-}
-
-input {
-    background-color:  rgb(150, 251, 241);
-    color: white;
-    border: black solid 1px;
 }
 
 .menu_new {
@@ -183,4 +186,75 @@ input {
     height: 30%;
     transition: 0.2s;
     opacity: 50%;
+}
+
+.themeForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 8%;
+    width: 90%;
+    background-color: white;
+    border-radius: 8px;
+    border: black 2px solid;
+    transition: 0.2s;
+}
+
+.themeForm:hover {
+    transition: 0.2s;
+    box-shadow: 0 0 17px rgba(0,0,0,1);
+    width: 93%;
+    height: 12%;
+}
+
+.themeFormText_DIV {
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.themeFormInput_DIV {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.themeFormInput {
+    width: 78%;
+}
+
+.themeFormButton_DIV {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    border: black 1px solid;
+    font-size: 1.2vw;
+    margin-bottom: 3%;
+}
+
+.themeFormText {
+    font-size: 1.3vw;
+}
+
+themeFormInput {
+
+}
+
+#inputForm {
+    transition: 0.2s;
+}
+
+#inputForm:focus {
+    border: #6dc0c8 4px solid;
+    transition: 0.2s;
+}
+
+.form_inner {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 4%;
 }

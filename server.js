@@ -11,6 +11,20 @@ app.get('/', function (request, respons) {
     respons.sendFile(__dirname + "/public/index.html");
 });
 
-io.sockets.on("connection", function(socket) {
+themesIDArr = [];
+
+io.sockets.on("connection", (socket) => {
     console.log("connect");
+
+    socket.on("addTheme", (data) => {
+        console.log("add: " + data);
+        themesIDArr.push(data);
+        console.log(themesIDArr);
+    });
+
+    socket.on("deleteTheme", (data) => {
+        console.log("delete: " + data);
+        themesIDArr.splice(themesIDArr.indexOf(data), 1);
+        console.log(themesIDArr);
+    });
 });
