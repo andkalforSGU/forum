@@ -1,3 +1,4 @@
+const socket = io("http://localhost:3000").connect();
 var MENU_ID = 0;
 
 document.getElementById("menu_new").onclick = () => {
